@@ -1,0 +1,45 @@
+This is a  program  which was designed as part of my "30-Day Python Challenge." 
+
+playlist class:
+1. __init__():
+   - This is the constructor for the Playlist class. It initializes a playlist with the name and songs(list) attrs.
+
+2. __str__():
+   - This method is used to provide a string representation of the playlist object. When we use print() on a Playlist 
+     object, this method returns a formatted string  to show the playlist's name and the number of songs it contains.
+
+3. __add__():
+   - This method defines the behavior for the + operator when used between two Playlist objects. It combines two playlists into a new 
+     Playlist object with a combined name and a list of songs from both playlists.
+
+4. __len__():
+   - This method returns the number of songs in the playlist.
+
+5. show_tracks():
+   - This method displays out the list of songs in the playlist, formatted with each song's index and title.
+
+main()
+1. Creating Playlist Instances:
+   - Two Playlist objects are created: chill with three songs, and focus with another three songs.
+
+2. Printing Playlists:
+   - The playlists are printed using the print() function, which invokes the __str__() to display their information.
+
+3. Getting Playlist Length:
+   - The length of the chill playlist is printed using the len() function, which calls the __len__().
+
+4. Merging Playlists:
+   - The playlists are merged using the + operator, which calls the __add__() to create a new combined playlist named "Chill Vibes + 
+     Focus Boost" containing all songs from both playlists.
+
+5. Displaying Merged Playlist:
+   - The merged playlist is printed, and its tracks are displayed using the show_tracks() method.
+
+Starting point:
+- The script is designed to run when executed directly (i.e., not imported as a module), as indicated by the if __name__ == "__main__": main() block. This ensures that the main() function is called only when this script is run as the main program.
+
+What I've learnt:
+- Dunder methods: Dunder methods are the special methods which is the short form for 'Double Underscore methods' they are also called as 
+  'magic methods'. The dunder methods consists of '_ _' double under scores at starting and ending of the method. eg:- __str__().
+  They allow us to customize the behavior of our class instances in various situations, like object initialization, string representation, 
+  comparison, and arithmetic operations. 
